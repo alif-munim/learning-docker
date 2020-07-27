@@ -152,6 +152,7 @@ function ItemDisplay({ item, onItemUpdate, onItemRemoval }) {
                         }
                     >
                         <i
+                            onClick={toggleCompletion}
                             className={`far ${
                                 item.completed ? 'fa-check-square' : 'fa-square'
                             }`}
